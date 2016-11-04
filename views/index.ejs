@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/jquery.Jcrop.css">
+  </head>
+  <body>
+  <form method="post" enctype="multipart/form-data"  id="form1" action="/admins/admin-form">
+    <a href="javascript:;" class="file">选择照片<input name="inputFile" type="file" accept="images/*" id="file"></a>
+    <div class="inline-labels">
+      <label>X1 <input type="text" size="4" id="x1" name="x1" /></label>
+      <label>Y1 <input type="text" size="4" id="y1" name="y1" /></label>
+      <label>X2 <input type="text" size="4" id="x2" name="x2" /></label>
+      <label>Y2 <input type="text" size="4" id="y2" name="y2" /></label>
+      <label>W <input type="text" size="4" id="w" name="w" /></label>
+      <label>H <input type="text" size="4" id="h" name="h" /></label>
+      <label> <input type="text"  size="4" id="divWidth" name="divWidth" style="display: none" /></label>
+
+    </div>
+  </form>
+
+  <div id="div1" style="height:300px;width: 300px;border: solid 1px " >
+    <!--<img id="images" width=100% />-->
+
+  </div>
+
+  <!--<input class="url" type="url" placeholder="url">-->
+
+  <button class="file">上传照片</button>
+  <script  type="text/javascript" src="/javascripts/jquery-1.12.3.min.js"></script>
+
+
+  <script type="text/javascript" src="/javascripts/jquery.Jcrop.js"></script>
+
+  <script type="text/javascript" src="/javascripts/main.js"></script>
+  </body>
+</html>

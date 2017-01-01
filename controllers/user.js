@@ -32,6 +32,7 @@ exports.upImg=function(req,res) {
         ////Object.keys(files).forEach(function(name) {
         ////    console.log('got file named ' + name);
         ////});
+
         var filesTmp = JSON.stringify(files);
         if (err) {
             console.log('parse error: ' + err);

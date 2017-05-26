@@ -8,9 +8,7 @@ var path = require('path');
 var co = require('co');
 var OSS = require('ali-oss');
 var client = new OSS({
-    region: 'oss-cn-shanghai',
-    accessKeyId: 'LTAI6K5lDlHrpgpv',
-    accessKeySecret: '5zsmDm3KwZn0JtioShpyfEm543l0XV '
+
 });
 co(function* (){
     var result = yield client.listBuckets();
